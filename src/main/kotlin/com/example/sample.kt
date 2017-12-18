@@ -7,7 +7,11 @@ import kotlin.reflect.KClass
 fun main(args: Array<String>) {
     val json = """{
         |  "message_id": 10
-        |, "username": "太郎"
+        |, "user": {
+        |    "user_id": 20
+        |  , "name": "太郎"
+        |  , "created": "2017-11-02T12:00:00.000"
+        |  }
         |, "text": "ウホッいい男"
         |, "created": "2017-12-18T12:00:00.000"
         |}""".trimMargin()
